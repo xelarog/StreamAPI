@@ -11,7 +11,7 @@ public class Main {
 
 //      1. Найти количество несовершеннолетних (т.е. людей младше 18 лет).
         Stream<Person> stream = persons.stream();
-        int count = (int) stream
+        long count = stream
                 .filter(x -> x.getAge() < 18)
                 .count();
 //        System.out.println("1. Количество несовершеннолетних: " + count);
